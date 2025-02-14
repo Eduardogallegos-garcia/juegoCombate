@@ -57,22 +57,37 @@ function peleador4(event){
     console.log(estados);
 }
 function jugar(){
-    
+let winner=document.querySelector(".winner");
    if(clicks[0]=='btnj1'){       
        let resJugador1=document.querySelector(".respJugador1");
         resJugador1.innerText=`El jugador 1 eligio ${estados[0]} con un poder de ${pelea[0]}`;
        
        let resJugador2=document.querySelector(".respJugador2");
         resJugador2.innerText=`El jugador 2 eligio ${estados[1]} con un poder de ${pelea[1]}`
-       console.log("presiono primero j1"+jugador1);
-       console.log(jugador2);
+       
+       
+       if(pelea[0]>pelea[1]){           
+            winner.innerText="El jugador 1 es el ganador"
+       }else if (pelea[0]<pelea[1]){
+        winner.innerText="El jugador 2 es el ganador"
+       }else{
+        winner.innerText="Empataron"
+       }
    }else{
     let resJugador1=document.querySelector(".respJugador1");
         resJugador1.innerText=`El jugador 1 eligio ${estados[1]} con un poder de ${pelea[1]}`;
        
        let resJugador2=document.querySelector(".respJugador2");
         resJugador2.innerText=`El jugador 2 eligio ${estados[0]} con un poder de ${pelea[0]}`
+        if(pelea[1]>pelea[0]){           
+            winner.innerText="El jugador 2 es el ganador"
+       }else if (pelea[1]<pela[0]){
+        winner.innerText="El jugador 1 es el ganador"
+       }else{
+        winner.innerText="Empataron"
+       }
    }
+
     
 }
 function miFuncion(event) {
