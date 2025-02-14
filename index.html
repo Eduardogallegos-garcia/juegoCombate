@@ -9,12 +9,12 @@
     <div class="container">
         <div class="jugador1">
             <div class="encabezado">
-                <p class="vida"><span class="vidaj1"> </span></p>
+                <p class="vida">Vida:<span class="vidaj1"> </span></p>
             </div>
             <div class="peleadores">
                 <div class="peleador">
                     <img src="" alt="">
-                    <button>Peleador 1</button>
+                    <button class="btnj1" onclick="peleador1(event)">Peleador 1</button>
                 </div>
                 <div class="peleador">
                     <img src="" alt="">
@@ -34,14 +34,14 @@
         </div>
         <div class="areaJuego">
             <div class="pelear">
-                <button class="jugar">Pelear</button>
+                <button class="jugar" onclick="jugar()">Pelear</button>
             </div>
             <div class="arena">
                 <div class="resJugador1">
-                    <p></p>
+                    <p class="respJugador1"></p>
                 </div>
                 <div class="resJugador2">
-                    <p></p>
+                    <p class="respJugador2"></p>
                 </div>
                 <div class="winner">
                     <p></p>
@@ -50,12 +50,12 @@
         </div>
         <div class="jugador2">
             <div class="encabezado">
-                <p class="vida"><span class="vidaj2"> </span></p>
+                <p class="vida">Vida: <span class="vidaj2"> </span></p>
             </div>
             <div class="peleadores">
                 <div class="peleador">
                     <img src="" alt="">
-                    <button>Peleador 1</button>
+                    <button class="btnj2" onclick="peleador1(event)">Peleador 1</button>
                 </div>
                 <div class="peleador">
                     <img src="" alt="">
