@@ -3,6 +3,7 @@ let vidaActual1=4;
 let vidaActual2=4;
 let pelea=[];
 let clicks=[];
+let estados=[];
 let estado='';
 function inicial(){
     let vida1=document.querySelector(".vidaj1");    
@@ -19,24 +20,58 @@ function peleador1(event){
     clicks.push(miFuncion(event));
     console.log(clicks);
     estado='peleador 1'
+    estados.push(estado);
+    console.log(estados);
+}
+function peleador2(event){
+    alert("desde peleadorr 2")
+    let peleador=100;
+    pelea.push(peleador);    
+    console.log(pelea)  
+    clicks.push(miFuncion(event));
+    console.log(clicks);
+    estado='peleador 2'
+    estados.push(estado);
+    console.log(estados);
+}
+function peleador3(event){
+    alert("desde peleadorr 3")
+    let peleador=150;
+    pelea.push(peleador);    
+    console.log(pelea)  
+    clicks.push(miFuncion(event));
+    console.log(clicks);
+    estado='peleador 3'
+    estados.push(estado);
+    console.log(estados);
+}
+function peleador4(event){
+    alert("desde peleadorr 4")
+    let peleador=200;
+    pelea.push(peleador);    
+    console.log(pelea)  
+    clicks.push(miFuncion(event));
+    console.log(clicks);
+    estado='peleador 4'
+    estados.push(estado);
+    console.log(estados);
 }
 function jugar(){
-    let jugador1=0;
-    let jugador2=0;
-   if(clicks[0]=='btnj1'){
-       jugador1=pelea[0];  
+    
+   if(clicks[0]=='btnj1'){       
        let resJugador1=document.querySelector(".respJugador1");
-        resJugador1.innerText=`El jugador 1 eligio ${estado} con un poder de ${jugador1}`;
-       jugador2=pelea[1];
+        resJugador1.innerText=`El jugador 1 eligio ${estados[0]} con un poder de ${pelea[0]}`;
+       
        let resJugador2=document.querySelector(".respJugador2");
-        resJugador2.innerText=`El jugador 2 eligio ${estado} con un poder de ${jugador2}`
+        resJugador2.innerText=`El jugador 2 eligio ${estados[1]} con un poder de ${pelea[1]}`
        console.log("presiono primero j1"+jugador1);
        console.log(jugador2);
    }else{
-    jugador1=pelea[1];
-    jugador2=pelea[0];
-    console.log("presiono segundo "+jugador1);
-    console.log(jugador2);
+    let resJugador1=document.querySelector(".respJugador1");
+        resJugador1.innerText=`El jugador 1 eligio ${estados[1]} con un poder de ${pelea[1]}`;
+       
+       let resJugador2=document.querySelector(".respJugador2");
+        resJugador2.innerText=`El jugador 2 eligio ${estados[0]} con un poder de ${pelea[0]}`
    }
     
 }
