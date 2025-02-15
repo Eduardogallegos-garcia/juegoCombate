@@ -12,49 +12,40 @@ function inicial(){
     vida2.innerText=vidaActual2;
 }
 
-function peleador1(event){
-    alert("desde peleadorr 1")
+function peleador1(event){    
     let peleador=50;
-    pelea.push(peleador);    
-    console.log(pelea)  
+    pelea.push(peleador);   
     clicks.push(miFuncion(event));
-    console.log(clicks);
     estado='peleador 1'
     estados.push(estado);
-    console.log(estados);
+    
 }
 function peleador2(event){
-    alert("desde peleadorr 2")
+    
     let peleador=100;
-    pelea.push(peleador);    
-    console.log(pelea)  
-    clicks.push(miFuncion(event));
-    console.log(clicks);
+    pelea.push(peleador);     
+    clicks.push(miFuncion(event));   
     estado='peleador 2'
     estados.push(estado);
-    console.log(estados);
+   
 }
 function peleador3(event){
-    alert("desde peleadorr 3")
+   
     let peleador=150;
     pelea.push(peleador);    
-    console.log(pelea)  
-    clicks.push(miFuncion(event));
-    console.log(clicks);
+    clicks.push(miFuncion(event));   
     estado='peleador 3'
     estados.push(estado);
-    console.log(estados);
+    
 }
 function peleador4(event){
-    alert("desde peleadorr 4")
+   
     let peleador=200;
-    pelea.push(peleador);    
-    console.log(pelea)  
-    clicks.push(miFuncion(event));
-    console.log(clicks);
+    pelea.push(peleador);     
+    clicks.push(miFuncion(event));   
     estado='peleador 4'
     estados.push(estado);
-    console.log(estados);
+   
 }
 function jugar(){
 let winner=document.querySelector(".winner");
@@ -80,9 +71,9 @@ let winner=document.querySelector(".winner");
        let resJugador2=document.querySelector(".respJugador2");
         resJugador2.innerText=`El jugador 2 eligio ${estados[0]} con un poder de ${pelea[0]}`
         if(pelea[1]>pelea[0]){           
-            winner.innerText="El jugador 2 es el ganador"
-       }else if (pelea[1]<pela[0]){
-        winner.innerText="El jugador 1 es el ganador"
+            winner.innerText="El jugador 1 es el ganador"
+       }else if (pelea[1]<pelea[0]){
+        winner.innerText="El jugador 2 es el ganador"
        }else{
         winner.innerText="Empataron"
        }

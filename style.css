@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fondo:#E8E9F3;
+    --fuente:#30362F;
+    --fondoButtons:#7EA172;
+    --fondoAreaJuego:#8C9091;
+    --encabezados:#7180B9;
+}
+
+
+body{
+    background-color: var(--fondo);
+}
+.container{
+    border: 2px solid var(--fuente);
+    margin: 5% 15%;
+    padding: 5%;
+    
+}
+.encabezado{
+    background-color: var(--encabezados);
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--fuente);
+    font-weight: bold;
+    font-size: 20px;
+}
+.peleadores{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+.peleador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    background-color: #7EA172;
+    border: none;
+    padding: 20px;
+    color: var(--fuente);
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+img{
+    max-width: 50%;
+    margin-bottom: 10px;
+}
+
+.areaJuego{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+    border: 2px solid var(--fondoButtons);
+    padding: 30px;
+    
+
+}
+.areaJuego p{
+    color: var(--fuente);
+    font-weight: bold;
+    margin: 5px 0;
+}
+.winner{
+    margin-top: 15px;
+    font-size: 25px;
+    color: var(--fuente);
+    font-weight: bold;
+}
+.jugar{
+    width: 200px;
+    font-size: 25px;
+}
